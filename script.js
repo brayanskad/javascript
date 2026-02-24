@@ -1,11 +1,21 @@
-let num =  Number (prompt("Digite um número:"))
- let num_two =  Number (prompt("Digite um número:"))
- let num_three =  Number (prompt("Digite um número:"))
- let num_four =  Number (prompt("Digite um número:"))
-let media = (num+num_two+num_three+num_four) /4
-if(media >= 7){
-    alert(`Sua média é: ${media} está aprovado`)
+var hora = Number(prompt("Digite a hora"))
+
+if (hora <= 11 && hora >= 6) {
+    alert(` O horário ${hora} é manhâ`)
 }
-else{
-    alert(`Sua média é: ${media} está reprovado`)
+else if (hora >= 12 && hora <= 18) {
+    alert(`O horário ${hora} é tarde`)
 }
+
+else if (hora >= 18 && hora <= 23) {
+    alert(` O seu horário ${hora} é noite`)
+}
+
+else if (hora >= 24 && hora <= 5) {
+    alert(` O horário ${hora} é madrugada`)
+}
+
+else {
+    alert("Horário invalido")
+}
+
